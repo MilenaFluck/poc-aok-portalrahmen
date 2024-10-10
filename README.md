@@ -39,11 +39,23 @@ To create a production bundle:
 npx nx build shell
 ```
 
-To see all available targets to run for a project, run:
+All infos on certain apps or libs:
 
 ```sh
 npx nx show project shell
 ```
+Example
+![img_1.png](img_1.png)
+
+
+See the project graph:
+
+```sh
+npx nx graph
+```
+
+Currently:
+![img.png](img.png)
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
 
