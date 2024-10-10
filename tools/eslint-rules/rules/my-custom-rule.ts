@@ -15,6 +15,7 @@
  */
 
 import { ESLintUtils } from '@typescript-eslint/utils';
+import { FunctionDeclaration, MethodDefinition } from 'estree';
 
 // NOTE: The rule will be available in ESLint configs as "@nx/workspace-my-custom-rule"
 export const RULE_NAME = 'my-custom-rule';
@@ -31,6 +32,24 @@ export const rule = ESLintUtils.RuleCreator(() => __filename)({
   },
   defaultOptions: [],
   create(context) {
-    return {};
+    return {
+      ':matches(FunctionDeclaration, MethodDefinition)': (
+        node: FunctionDeclaration | MethodDefinition,
+      ) => {
+        if (!hasReturnType(node)) {
+          context.report({
+            node,
+            message: 'please add a return type',
+          });
+        }
+      },
+    };
   },
 });
+
+function hasReturnType(node): boolean {
+  if (node.type === 'FunctionDeclaration') {
+    return !!node.returnType;
+  }
+  return !!node.value.returnType;
+}

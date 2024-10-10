@@ -14,5 +14,4 @@ export const appRoutes: Route[] = [
     redirectTo: 'remote1',
     pathMatch: 'full'
   },
-
 ];

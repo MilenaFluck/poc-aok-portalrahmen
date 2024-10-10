@@ -1,5 +1,7 @@
 <div class="container">
   <p>Remote 1 Content</p>
   <p>Function from shared JS library: {{ number }}</p>
+  <button (click)="generate()">Generate new number</button>
+  <button (click)="sendMessage(number)">Send Message To Remote 2</button>
   <lib-ui></lib-ui>
 </div>
