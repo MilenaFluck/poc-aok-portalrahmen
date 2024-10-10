@@ -11,4 +11,9 @@ export function App() {
   );
 }
 
+// testing whether global eslint-rules are applied in React-Apps: hover :)
+function functionWithoutReturnType() {
+  return null;
+}
+
 export default App;

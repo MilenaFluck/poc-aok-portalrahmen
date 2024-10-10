@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
     });
   }
 
+  // testing whether global eslint-rules are applied in Angular-Apps: hover :)
   functionWithoutReturnType() {
     return null;
   }

@@ -39,7 +39,7 @@ export const rule = ESLintUtils.RuleCreator(() => __filename)({
         if (!hasReturnType(node)) {
           context.report({
             node,
-            message: 'please add a return type',
+            message: 'Hello :) This is a global test rule.',
           });
         }
       },
