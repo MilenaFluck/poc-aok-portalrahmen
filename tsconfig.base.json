@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@poc-aok-portalrahmen/lib-js": ["libs/lib-js/src/index.ts"],
-      "@poc-aok-portalrahmen/ui": ["libs/ui/src/index.ts"]
+      "@poc-aok-portalrahmen/angularLib": ["libs/angularLib/src/index.ts"],
+      "@poc-aok-portalrahmen/ui": ["libs/ui/src/index.ts"],
+      "remote1/Routes": ["apps/remote1/src/app/remote-entry/entry.routes.ts"],
+      "remote2/Routes": ["apps/remote2/src/app/remote-entry/entry.routes.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
