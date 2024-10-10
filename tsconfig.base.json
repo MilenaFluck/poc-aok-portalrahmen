@@ -19,7 +19,8 @@
       "@poc-aok-portalrahmen/jsLib": ["libs/jsLib/src/index.ts"],
       "@poc-aok-portalrahmen/ui": ["libs/ui/src/index.ts"],
       "remote1/Routes": ["apps/remote1/src/app/remote-entry/entry.routes.ts"],
-      "remote2/Routes": ["apps/remote2/src/app/remote-entry/entry.routes.ts"]
+      "remote2/Routes": ["apps/remote2/src/app/remote-entry/entry.routes.ts"],
+      "remote4/Routes": ["apps/remote4/src/app/remote-entry/entry.routes.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

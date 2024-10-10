@@ -59,6 +59,7 @@
     }
   },
   "plugins": [
+    "@nrwl/react",
     {
       "plugin": "@nx/playwright/plugin",
       "options": {

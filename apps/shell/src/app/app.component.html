@@ -1,8 +1,14 @@
 <div class="header">
   <h1>Header area</h1>
+  <h3>Toggle top Fachanwendung</h3>
   <ul class="remote-menu">
-    <li><a routerLink="/remote1">Remote 1</a></li>
-    <li><a routerLink="/remote2">Remote 2</a></li>
+    <li><a routerLink="/remote1">Top: Remote 1</a></li>
+    <li><a routerLink="/remote2">Top: Remote 2</a></li>
+  </ul>
+  <h3>Toggle bottom Fachanwendung</h3>
+  <ul class="remote-menu-bottom">
+    <li><a [routerLink]="[{ outlets: { microfrontend2: ['remote4'] } }]">Bottom: Remote 4</a></li>
+    <li><a [routerLink]="[{ outlets: { microfrontend2: ['remote1'] } }]">Bottom: Remote 1</a></li>
   </ul>
   <p>Function from shared JS library: {{ number }}</p>
   <lib-ui></lib-ui>
@@ -10,6 +16,7 @@
 </div>
 
 <router-outlet></router-outlet>
+<router-outlet name="microfrontend2"></router-outlet>
 
 <div class="footer">
   <h3>Footer area</h3>
