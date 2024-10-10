@@ -22,7 +22,10 @@
             "input": "apps/remote1/public"
           }
         ],
-        "styles": ["apps/remote1/src/styles.scss"],
+        "styles": [
+          "apps/remote1/src/styles.scss",
+          "styles/global-styles.scss"
+        ],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/remote1/webpack.config.ts"

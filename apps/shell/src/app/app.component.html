@@ -1,16 +1,18 @@
-<div class="header">
-  <h1>Header area</h1>
+<div class="header container">
+  <h2>Header area</h2>
   <h3>Toggle top Fachanwendung</h3>
   <ul class="remote-menu">
     <li><a routerLink="/remote1">Top: Remote 1</a></li>
     <li><a routerLink="/remote2">Top: Remote 2</a></li>
+    <li><a routerLink="/remote4">Top: Remote 4</a></li>
   </ul>
   <h3>Toggle bottom Fachanwendung</h3>
   <ul class="remote-menu-bottom">
-    <li><a [routerLink]="[{ outlets: { microfrontend2: ['remote4'] } }]">Bottom: Remote 4</a></li>
     <li><a [routerLink]="[{ outlets: { microfrontend2: ['remote1'] } }]">Bottom: Remote 1</a></li>
+    <li><a [routerLink]="[{ outlets: { microfrontend2: ['remote2'] } }]">Bottom: Remote 2</a></li>
+    <li><a [routerLink]="[{ outlets: { microfrontend2: ['remote4'] } }]">Bottom: Remote 4</a></li>
   </ul>
-  <p>Function from shared JS library: {{ number }}</p>
+  <p class="js-lib">Function from shared JS library: {{ number }}</p>
   <lib-ui></lib-ui>
   <p>Message from Remote 1: {{ message }}</p>
 </div>
@@ -18,6 +20,6 @@
 <router-outlet></router-outlet>
 <router-outlet name="microfrontend2"></router-outlet>
 
-<div class="footer">
-  <h3>Footer area</h3>
+<div class="footer container">
+  <h2>Footer area</h2>
 </div>

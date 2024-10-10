@@ -4,8 +4,8 @@ import styles from './app.module.css';
 
 export function App() {
   return (
-    <div style={{ border: "2px solid darkblue", padding: "20px" }}>
-      <p>Remote 3 Content</p>
+    <div style={{ border: "4px solid white", backgroundColor: "blue" }}>
+      <h2>Fachanwendung 3</h2>
       <p>Function from shared JS library: {addNumbers(5, 9)}</p>
     </div>
   );
