@@ -1,8 +1,30 @@
 # PocAokPortalrahmen
 
-## More on CI setup
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/v5Hi7HWYpU)
+## What's part of the POC?
+- multiple apps co-existing (Angular & React)
+- shared ESLint rules
+- shared global styles
+- module federation with multiple oulets
+- individual routing inside each remote (max. flexibility in stacking together fachanwendungen)
+- shared libs (Angular specigic & JS-global)
+- simple way of communication between microfrontends
+- e2e-projects already set up for playwright (can be decided for each app/lib individually => cypress etc.)
+- jest configured and unit tests ready to run
+- check out nx graph and nx show (find below)
 
+## What else can be done easily?
+- one-command setup of storybook
+
+## Not done a POC yet for:
+- Microfrontend mechanisms framework-agnostic with Single-SPA
+- import of global style-tokens
+- including PHP-App in workspace
+- more ways of communication between MFEs (shared state, event bus)
+- provide libs in various versions for apps as npm-package
+
+## More on CI setup
+CI can easyly be set up for all apps.
+[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/v5Hi7HWYpU)
 
 ## Run tasks
 You can start each app individually or the shell that contains remote1 and remote2 as micro-frontends. Please choose new ports if you run them all at the same time: e.g. --port=4200

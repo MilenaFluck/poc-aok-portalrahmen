@@ -1,5 +1,11 @@
 <div class="container">
   <h2>Fachanwendung 2</h2>
+  <h3>Route between components withing Fachanwendug:</h3>
+  <div class="row">
+    <a routerLink="component-1" routerLinkActive="active">Component 1</a>
+    <a routerLink="component-2" routerLinkActive="active">Component 2</a>
+  </div>
+  <router-outlet></router-outlet>
   <lib-ui></lib-ui>
   <p class="js-lib">Function from shared JS library: {{ number }}</p>
 </div>
