@@ -1,0 +1,5 @@
+{
+  "remote1": "http://localhost:4300/",
+  "remote2": "http://localhost:4400/",
+  "remote4": "http://localhost:4700/"
+}

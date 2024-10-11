@@ -15,7 +15,7 @@ import { ModuleFederationConfig } from '@nx/webpack';
  */
 const config: ModuleFederationConfig = {
   name: 'shell',
-  remotes: ['remote1', 'remote2', 'remote4'],
+  remotes: [],
 };
 
 export default config;

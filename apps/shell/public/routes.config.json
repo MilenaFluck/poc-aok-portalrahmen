@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "path": "remote1",
+      "loadChildren": "remote1"
+    },
+    {
+      "path": "remote2",
+      "loadChildren": "remote2"
+    },
+    {
+      "path": "remote4",
+      "loadChildren": "remote4"
+    }
+  ]
+}
