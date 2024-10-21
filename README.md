@@ -26,8 +26,18 @@
 CI can easyly be set up for all apps.
 [Click here to finish setting up your workspace!](https://cloud.nx.app/connect/v5Hi7HWYpU)
 
+## Needs to be added in POC
+- Single-SPA
+- Orchestratation at runtime (load config from CMS)
+- embedd Design Tokens
+- refactor existing structure partly in new Nx workspace
+- several ways of communication (event bus, shared services, window events, broadcast channels etc.)
+- Individual navigation
+- configuration of text for several tenants
+
 ## Run tasks
 You can start each app individually or the shell that contains remote1 and remote2 as micro-frontends. Please choose new ports if you run them all at the same time: e.g. --port=4200
+Now using Native Federation! You have to have all apps 
 To run the dev server for your apps:
 
 Angular-apps:
