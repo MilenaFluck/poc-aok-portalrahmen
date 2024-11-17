@@ -17,7 +17,7 @@ export const appRoutes: Route[] = [
     loadChildren: () => loadRemoteModule('remote2', './Routes').then(m => m.remoteRoutes),
   },
   {
-    path: 'remote2',  // Route to load remote1 as a microfrontend
+    path: 'remote2',
     loadChildren: () => loadRemoteModule('remote2', './Routes').then(m => m.remoteRoutes),
     outlet: 'microfrontend2',
   },
@@ -32,6 +32,6 @@ export const appRoutes: Route[] = [
   },
   {
     path: '',
-    component: AppComponent,
+    component: AppComponent
   },
 ];

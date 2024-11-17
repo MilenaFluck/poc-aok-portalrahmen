@@ -9,7 +9,7 @@ module.exports = [
     ignores: ['**/dist'],
   },
   {
-    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx', '**/*.vue'],
     rules: {
       '@nx/enforce-module-boundaries': [
         'error',
@@ -35,7 +35,10 @@ module.exports = [
     // Define your custom ESLint plugin
     plugins: {
       // Load your custom plugin located in the tools/eslint-rules directory
-      'my-custom-plugin': require(path.resolve(__dirname, 'tools/eslint-rules')),
+      'my-custom-plugin': require(path.resolve(
+        __dirname,
+        'tools/eslint-rules'
+      )),
     },
     rules: {
       // Use your custom rule
